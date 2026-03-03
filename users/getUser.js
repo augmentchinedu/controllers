@@ -1,5 +1,4 @@
-export const getUser = (req, res) => {
-    console.log("Getting User");
-    res.json({ id: "uid", name: "Augment" });
-  };
-  
+export const getUser = (c) => {
+  console.log("Getting User");
+  return c.json({ id: "uid", name: "Augment" });
+};

@@ -1,4 +1,4 @@
-export const getGame = (req, res) => {
+export const getGame = (c) => {
   console.log("Loading Game");
-  res.json({ id: "chess", name: "Chess" });
+  return c.json({ id: "chess", name: "Chess" });
 };

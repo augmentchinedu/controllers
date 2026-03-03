@@ -1,5 +1,5 @@
-export const getStore = (req, res) => {
+export const getStore = (c) => {
     console.log("Fetching Store");
-    res.json({ id: "sid", name: "Pro Classics" });
+    return c.json({ id: "sid", name: "Pro Classics" });
   };
   

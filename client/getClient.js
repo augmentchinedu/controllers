@@ -1,4 +1,5 @@
-export const getClient = (req, res) => {
-  console.log("Fetching Client");
-  res.json({ id: "express", name: "Express" });
+export const getClient = (c) => {
+  const id = c.req.param("id"); // get :id from path
+  console.log("Getting Client", id);
+  return c.json({ id, name: "Augment" });
 };

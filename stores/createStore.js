@@ -1,4 +1,4 @@
-export const createStore = (req, res) => {
+export const createStore = (c) => {
   console.log("Creating Store");
-  res.json({ id: "sid", name: "Yatsar" });
+  return c.json({ id: "sid", name: "Yatsar" });
 };
